@@ -48,9 +48,8 @@
         "type": "general"
     },
     "native": {
-        "ignoreInfoAccessoryServices": true,
+        "characteristicPollingInterval": "???",
         "wrapperConfig": {
-            "description": "This is a configuration file for homebridge.",
             "accessories": [
             ],
             "platforms": [

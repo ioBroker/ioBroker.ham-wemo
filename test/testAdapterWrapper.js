@@ -84,6 +84,18 @@ describe('Test ' + adapterShortName + ' Wrapper adapter', () => {
             config.native = defConfig.native;
 
             setup.setAdapterConfig(config.common, config.native);
+
+            setup.startController(
+                true,
+                (id, obj) => {},
+                (id, state) => {
+                    if (onStateChanged) onStateChanged(id, state);
+                },
+                (_objects, _states) => {
+                    objects = _objects;
+                    states  = _states;
+                    _done();
+                });
         });
     });
 
@@ -99,23 +111,10 @@ describe('Test ' + adapterShortName + ' Wrapper adapter', () => {
                 },
                 () => {
                     states.subscribeMessage('system.adapter.test.0');
-                    done();
+                    setTimeout(() => done(), 10000);
                 });
         });
     }).timeout(60000);
-
-    it('Test ' + adapterShortName + ' Wrapper: Verify Init', done => {
-        states.getState(`${adapterShortName}.0.${namespace}.${namespace}.${namespace}-Name`, (err, state) => {
-            expect(err).to.not.exist;
-            expect(state.val).to.be.false;
-
-            states.getState(`${adapterShortName}.0.${namespace}.Accessory-Information.Model`, (err, state) => {
-                expect(err).to.not.exist;
-                expect(state.val).to.be.equal('Sun Position');
-                done();
-            });
-        });
-    }).timeout(10000);
 
     after('Test ' + adapterShortName + ' Wrapper adapter: Stop js-controller', function (done) {
         this.timeout(10000);
