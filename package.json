@@ -1,0 +1,44 @@
+{
+    "version": "0.1.0",
+    "name": "iobroker.ham-wemo",
+    "author": {
+        "name": "bluefox",
+        "email": "dogafox@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/ioBroker/ioBroker.ham-wemo/issues"
+    },
+    "contributors": [
+        {
+            "name": "bluefox",
+            "email": "dogafox@gmail.com"
+        }
+    ],
+    "dependencies": {
+        "iobroker.ham": "^0.3.0",
+        "homebridge-platform-wemo": "^1.3.6"
+    },
+    "description": "Wemo adapter for iobroker based on homebridge",
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "gulp": "^3.9.1",
+        "mocha": "^5.2.0"
+    },
+    "homepage": "https://github.com/ioBroker/ioBroker.ham-wemo",
+    "keywords": [
+        "ioBroker",
+        "Homebridge",
+        "Smart Home",
+        "home automation"
+    ],
+    "license": "MIT",
+    "main": "main.js",
+    "readmeFilename": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ioBroker/ioBroker.ham-wemo.git"
+    },
+    "scripts": {
+        "test": "node node_modules/mocha/bin/mocha --exit"
+    }
+}

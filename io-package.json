@@ -1,0 +1,75 @@
+{
+    "common": {
+        "name": "ham-wemo",
+        "version": "0.1.0",
+        "news": {
+            "0.1.0": {
+                "en": "initial adapter",
+                "de": "Initiale Version",
+                "ru": "Первоначальный адаптер",
+                "pt": "Versão inicial",
+                "fr": "Version initiale",
+                "nl": "Eerste release"
+            }
+        },
+        "title": "Wemo plugin",
+        "titleLang": {
+            "en": "Wemo plugin",
+            "de": "Wemo plugin",
+            "ru": "Wemo plugin",
+            "pt": "Wemo plugin",
+            "nl": "Wemo plugin",
+            "fr": "Wemo plugin",
+            "it": "Wemo plugin",
+            "es": "Wemo plugin"
+        },
+        "desc": {
+            "en": "ioBroker Homebridge Adapter",
+            "de": "ioBroker Homebridge Adapter",
+            "ru": "ioBroker Homebridge драйвер",
+            "pt": "Modelo de Homebridge para o ioBroker",
+            "fr": "ioBroker Homebridge modèle",
+            "nl": "ioBroker Homebridge Adapter",
+            "it": "Adattatore Homebridge ioBroker",
+            "es": "Adaptador Homebridge ioBroker"
+        },
+        "authors": [
+            "bluefox <dogafox@gmail.com>"
+        ],
+        "platform": "Javascript/Node.js",
+        "mode": "daemon",
+        "icon": "ham-wemo.png",
+        "materialize": true,
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.ham-wemo/master/admin/ham-wemo.png",
+        "keywords": ["homebridge", "wemo"],
+        "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
+        "loglevel": "info",
+        "type": "general"
+    },
+    "native": {
+        "ignoreInfoAccessoryServices": true,
+        "wrapperConfig": {
+            "description": "This is a configuration file for homebridge.",
+            "accessories": [
+            ],
+            "platforms": [
+                {
+                    "platform": "BelkinWeMo",
+                    "name": "WeMo Platform",
+                    "noMotionTimer": 60,
+                    "ignoredDevices": [],
+                    "manualDevices": [],
+                    "discovery": true,
+                    "wemoClient": {
+                        "port": 1234,
+                        "discover_opts": {
+                            "unicastBindPort": 1235
+                        },
+                        "listen_interface": "wlan0"
+                    }
+                }
+            ]
+        }
+    }
+}
