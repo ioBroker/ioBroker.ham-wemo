@@ -85,6 +85,7 @@ describe('Test ' + adapterShortName + ' Wrapper adapter', () => {
             config.common.loglevel = 'debug';
 
             config.native = defConfig.native;
+            config.native.wrapperConfig.platforms[0].wemoClient.listen_interface = 'lo';
 
             setup.setAdapterConfig(config.common, config.native);
 
