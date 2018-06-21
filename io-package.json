@@ -1,8 +1,19 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "0.1.0",
+        "version": "0.2.0",
         "news": {
+            "0.2.0": {
+                "en": "Optimizations",
+                "de": "Optimierungen",
+                "ru": "Оптимизации",
+                "pt": "Otimizações",
+                "nl": "optimalisaties",
+                "fr": "Optimisations",
+                "it": "ottimizzazioni",
+                "es": "Optimizaciones",
+                "pl": "Optymalizacje"
+            },
             "0.1.0": {
                 "en": "initial adapter",
                 "de": "Initiale Version",
@@ -12,26 +23,26 @@
                 "nl": "Eerste release"
             }
         },
-        "title": "Wemo plugin",
+        "title": "Belkin Wemo plugin",
         "titleLang": {
-            "en": "Wemo plugin",
-            "de": "Wemo plugin",
-            "ru": "Wemo plugin",
-            "pt": "Wemo plugin",
-            "nl": "Wemo plugin",
-            "fr": "Wemo plugin",
-            "it": "Wemo plugin",
-            "es": "Wemo plugin"
+            "en": "Belkin Wemo plugin",
+            "de": "Belkin Wemo plugin",
+            "ru": "Belkin Wemo plugin",
+            "pt": "Belkin Wemo plugin",
+            "nl": "Belkin Wemo plugin",
+            "fr": "Belkin Wemo plugin",
+            "it": "Belkin Wemo plugin",
+            "es": "Belkin Wemo plugin"
         },
         "desc": {
-            "en": "ioBroker Homebridge Adapter",
-            "de": "ioBroker Homebridge Adapter",
-            "ru": "ioBroker Homebridge драйвер",
-            "pt": "Modelo de Homebridge para o ioBroker",
-            "fr": "ioBroker Homebridge modèle",
-            "nl": "ioBroker Homebridge Adapter",
-            "it": "Adattatore Homebridge ioBroker",
-            "es": "Adaptador Homebridge ioBroker"
+            "en": "ioBroker Homebridge Adapter Belkin Wemo",
+            "de": "ioBroker Homebridge Adapter Belkin Wemo",
+            "ru": "ioBroker Homebridge драйвер Belkin Wemo",
+            "pt": "Modelo de Homebridge para o ioBroker Belkin Wemo",
+            "fr": "ioBroker Homebridge modèle Belkin Wemo",
+            "nl": "ioBroker Homebridge Adapter Belkin Wemo",
+            "it": "Adattatore Homebridge ioBroker Belkin Wemo",
+            "es": "Adaptador Homebridge ioBroker Belkin Wemo"
         },
         "authors": [
             "bluefox <dogafox@gmail.com>"
@@ -49,8 +60,8 @@
     },
     "native": {
         "ignoreInfoAccessoryServices": true,
+        "characteristicPollingInterval": 0,
         "wrapperConfig": {
-            "description": "This is a configuration file for homebridge.",
             "accessories": [
             ],
             "platforms": [

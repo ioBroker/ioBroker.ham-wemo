@@ -9,7 +9,10 @@ Read more about it here https://www.npmjs.com/package/homebridge-platform-wemo
 
 ## Changelog
 
-### 0.0.1 (2018-06-20)
+### 0.2.0 (2018.06.21)
+* (Apollon77) Optimizations
+
+### 0.1.0 (2018-06-20)
 * (bluefox) initial commit
 
 ## License
