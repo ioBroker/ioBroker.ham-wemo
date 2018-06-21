@@ -44,12 +44,12 @@
             var id = $key.attr('id');
             if ($key.attr('type') === 'checkbox') {
                 // do not call onChange direct, because onChange could expect some arguments
-                $key.prop('checked', settings[id]).change(function() {
+                $key.prop('checked', settings[id]).on('change', function() {
                     onChange();
                 });
             } else {
                 // do not call onChange direct, because onChange could expect some arguments
-                $key.val(settings[id]).change(function() {
+                $key.val(settings[id]).on('change', function() {
                     onChange();
                 }).keyup(function() {
                     onChange();
@@ -68,7 +68,15 @@
                     text += '</select>';
                     $('#listen_interface').remove();//.select();
                     $('.listen_interface_div').prepend(text);
-                    $('#listen_interface').select();
+
+                    if (ints.indexOf(settings.listen_interface) === -1) {
+                        settings.listen_interface = ints[0];
+                        onChange();
+                    }
+
+                    $('#listen_interface').on('change', function() {
+                        onChange();
+                    }).val(settings.listen_interface).select();
                     M.updateTextFields();
                 } else {
                     window.alert(err || 'Unknown error');
