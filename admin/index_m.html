@@ -15,7 +15,7 @@
 <script type="text/javascript" src="words.js"></script>
 <style>
     .m .col .select-wrapper+label {
-        top: -26px;
+        top: -26px !important;
     }
     .m span {
         font-size: 12px;
@@ -66,8 +66,9 @@
                     }
 
                     text += '</select>';
-
-                    $('#listen_interface').replaceWith(text).select();
+                    $('#listen_interface').remove();//.select();
+                    $('.listen_interface_div').prepend(text);
+                    $('#listen_interface').select();
                     M.updateTextFields();
                 } else {
                     window.alert(err || 'Unknown error');
@@ -170,20 +171,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s12 m6 l4 xl3">
+                    <div class="input-field col s12 m6 l4 xl3 listen_interface_div">
                         <input id="listen_interface" class="value"/>
                         <label for="listen_interface" class="translate">listen_interface</label>
                     </div>
                 </div>
                 <div class="row local">
                     <div class="col s12">
-                        <label class="translate">ignoredDevices:</label>
+                        <label class="translate">ignoredDevices</label>
                         <div class="chips ignored-devices"></div>
                     </div>
                 </div>
                 <div class="row local">
                     <div class="col s12">
-                        <label class="translate">manualDevices:</label>
+                        <label class="translate">manualDevices</label>
                         <div class="chips manual-devices"></div>
                     </div>
                 </div>
