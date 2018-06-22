@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "news": {
-            "0.2.0": {
+            "0.2.1": {
                 "en": "Optimizations",
                 "de": "Optimierungen",
                 "ru": "Оптимизации",
@@ -56,7 +56,7 @@
         "keywords": ["homebridge", "wemo"],
         "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
         "loglevel": "info",
-        "type": "general"
+        "type": "hardware"
     },
     "native": {
         "ignoreInfoAccessoryServices": true,
