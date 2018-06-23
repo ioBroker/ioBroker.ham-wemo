@@ -57,7 +57,7 @@
             }
         });
 
-        if (typeof getInterfaces === 'function') {
+        if (false && typeof getInterfaces === 'function') {
             getInterfaces(true, function (err, ints) {
                 if (ints) {
                     var text = '<select id="listen_interface">';
@@ -180,7 +180,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s12 m6 l4 xl3 listen_interface_div">
-                        <input id="listen_interface" class="value"/>
+                        <input id="listen_interface" class="value" type="text"/>
                         <label for="listen_interface" class="translate">listen_interface</label>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "name": "iobroker.ham-wemo",
     "author": {
         "name": "bluefox",
@@ -15,8 +15,8 @@
         }
     ],
     "dependencies": {
-        "iobroker.ham": "^0.4.0",
-        "homebridge-platform-wemo": "^1.3.6"
+        "iobroker.ham": "^0.4.1",
+        "homebridge-platform-wemo": "^1.3.8"
     },
     "description": "Wemo adapter for iobroker based on homebridge",
     "devDependencies": {
