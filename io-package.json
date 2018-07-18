@@ -67,7 +67,7 @@
         "keywords": ["homebridge", "wemo"],
         "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
         "loglevel": "info",
-        "type": "hardware"
+        "type": "iot-systems"
     },
     "native": {
         "ignoreInfoAccessoryServices": true,
