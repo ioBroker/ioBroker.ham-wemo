@@ -1,5 +1,8 @@
 ![Logo](admin/ham-wemo.png)
 # ioBroker Wemo adapter based on homebridge-platform-wemo
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ioBroker/ioBroker.ham-wemo.svg)](https://greenkeeper.io/)
+
 =================
 
 ## Description
