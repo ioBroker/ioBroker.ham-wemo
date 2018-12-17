@@ -1,8 +1,19 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "0.2.2",
+        "version": "1.0.0",
         "news": {
+            "1.0.0": {
+                "en": "Optimizations",
+                "de": "Optimierungen",
+                "ru": "Оптимизации",
+                "pt": "Otimizações",
+                "nl": "optimalisaties",
+                "fr": "Optimisations",
+                "it": "ottimizzazioni",
+                "es": "Optimizaciones",
+                "pl": "Optymalizacje"
+            },
             "0.2.2": {
                 "en": "Small config fix",
                 "de": "Kleine Konfiguration reparieren",
