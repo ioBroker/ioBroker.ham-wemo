@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "news": {
+            "1.0.1": {
+                "en": "homebridge version updated",
+                "de": "Homebridge-Version aktualisiert",
+                "ru": "обновлена версия homebridge",
+                "pt": "versão homebridge atualizada",
+                "nl": "Homebridge-versie bijgewerkt",
+                "fr": "version de homebridge mise à jour",
+                "it": "versione di homebridge aggiornata",
+                "es": "versión homebridge actualizada",
+                "pl": "zaktualizowana wersja homebridge",
+                "zh-cn": "homebridge版本更新"
+            },
             "1.0.0": {
                 "en": "Optimizations",
                 "de": "Optimierungen",
