@@ -12,6 +12,10 @@ Read more about it here https://www.npmjs.com/package/homebridge-platform-wemo
 
 ## Changelog
 
+### __WORK IN PROGRESS__
+* (Apollon77) BREAKING: Nodejs 10.17.0+ needed as minimum version
+* (Apollon77) homebridge version and dependencies updated
+
 ### 1.0.1 (2019.07.05)
 * (Apollon77) homebridge version updated
 

@@ -1,0 +1,191 @@
+# This is a composition of lint and test scripts
+# Make sure to update this file along with the others
+
+name: Test and Release
+
+# Run this job on all pushes and pull requests
+# as well as tags with a semantic version
+on:
+  push:
+    branches:
+      - '*'
+    tags:
+      # normal versions
+      - "v?[0-9]+.[0-9]+.[0-9]+"
+      # pre-releases
+      - "v?[0-9]+.[0-9]+.[0-9]+-**"
+  pull_request: {}
+
+jobs:
+  # Performs quick checks before the expensive test runs
+  check-and-lint:
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+
+      - name: Install Dependencies
+        run: npm install
+
+#      - name: Perform a type check
+#        run: npm run check:ts
+#        env:
+#          CI: true
+      # - name: Lint TypeScript code
+      #   run: npm run lint
+#      - name: Test package files
+#        run: npm run test:package
+
+  # Runs adapter tests on all supported node versions and OSes
+  adapter-tests:
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
+
+    needs: [check-and-lint]
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run package tests
+        run: node node_modules/mocha/bin/mocha test/testPackageFiles.js --exit
+
+      - name: Run WrapperNoInfo tests
+        run: node node_modules/mocha/bin/mocha test/testAdapterWrapperNoInfo.js --exit
+
+      - name: Run WrapperWithInfo tests
+        run: node node_modules/mocha/bin/mocha test/testAdapterWrapperWithInfo.js --exit
+
+      - name: Run LocalMode tests (linux/osx)
+        if: startsWith(runner.OS, 'windows') == false
+        run: |
+          rm -rf tmp/node_modules/iobroker.ham/node_modules/homebridge-http-webhooks
+          rm -rf tmp/node_modules/iobroker.ham/node_modules/homebridge-sun-position
+          node node_modules/mocha/bin/mocha test/testAdapterZLocal.js --exit
+
+      - name: Run LocalMode tests (windows)
+        if: startsWith(runner.OS, 'windows')
+        run: |
+          rm tmp\node_modules\iobroker.ham\node_modules\homebridge-http-webhooks -r -fo
+          rm tmp\node_modules\iobroker.ham\node_modules\homebridge-sun-position -r -fo
+          node node_modules/mocha/bin/mocha test/testAdapterZLocal.js --exit
+
+      - name: Run GlobalMode tests (linux/osx)
+        if: startsWith(runner.OS, 'windows') == false
+        run: |
+          rm -rf tmp/node_modules/iobroker.ham/node_modules/homebridge-http-webhooks
+          rm -rf tmp/node_modules/iobroker.ham/node_modules/homebridge-sun-position
+          rm -rf tmp/node_modules/iobroker.ham/node_modules/homebridge
+          npm install -g homebridge@1.1.1
+          npm install -g homebridge-http-webhooks
+          npm install -g homebridge-sun-position
+          export NODE_GLOBAL_DIR=$(npm root -g)
+          node node_modules/mocha/bin/mocha test/testAdapterXGlobal.js --exit
+
+      - name: Run GlobalMode tests (windows) Pre-Cleanup
+        if: startsWith(runner.OS, 'windows')
+        run: |
+          rm tmp\node_modules\iobroker.ham\node_modules\homebridge-http-webhooks -r -fo
+          rm tmp\node_modules\iobroker.ham\node_modules\homebridge-sun-position -r -fo
+          rm tmp\node_modules\iobroker.ham\node_modules\homebridge -r -fo
+
+      - name: Run GlobalMode tests (windows)
+        if: startsWith(runner.OS, 'windows')
+        shell: cmd
+        run: |
+          npm install -g homebridge@1.1.1
+          npm install -g homebridge-http-webhooks
+          npm install -g homebridge-sun-position
+          for /f "delims=" %%A in ('npm root -g') do set "NODE_GLOBAL_DIR=%%A"
+          node node_modules/mocha/bin/mocha test/testAdapterXGlobal.js --exit
+
+#      - name: Run unit tests
+#        run: npm run test:unit
+#      - name: Run integration tests # (linux/osx)
+#        if: startsWith(runner.OS, 'windows') == false
+#        run: DEBUG=testing:* npm run test:integration
+#      - name: Run integration tests # (windows)
+#        if: startsWith(runner.OS, 'windows')
+#        run: set DEBUG=testing:* & npm run test:integration
+
+  # Deploys the final package to NPM
+  deploy:
+    needs: [adapter-tests]
+
+    # Trigger this step only when a commit on master is tagged with a version number
+    if: |
+      contains(github.event.head_commit.message, '[skip ci]') == false &&
+      github.event_name == 'push' &&
+      github.event.base_ref == 'refs/heads/master' &&
+      startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Extract the version and commit body from the tag
+        # The body may be multiline, therefore we need to escape some characters
+        run: |
+          VERSION="${{ github.ref }}"
+          VERSION=${VERSION##*/}
+          VERSION=${VERSION##*v}
+          echo "::set-env name=VERSION::$VERSION"
+          BODY=$(git show -s --format=%b)
+          BODY="${BODY//'%'/'%25'}"
+          BODY="${BODY//$'\n'/'%0A'}"
+          BODY="${BODY//$'\r'/'%0D'}"
+          echo "::set-env name=BODY::$BODY"
+
+      - name: Install Dependencies
+        run: npm install
+
+#      - name: Create a clean build
+#        run: npm run build
+      - name: Publish package to npm
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+          npm whoami
+          npm publish
+
+      - name: Create Github Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release v${{ env.VERSION }}
+          draft: false
+          # Prerelease versions create prereleases on Github
+          prerelease: ${{ contains(env.VERSION, '-') }}
+          body: ${{ env.BODY }}
