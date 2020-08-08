@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "1.0.1",
+        "version": "1.1.0",
         "news": {
+            "1.1.0": {
+                "en": "BREAKING: Nodejs 10.17.0+ needed as minimum version\nhomebridge version and dependencies updated",
+                "de": "BREAKING: Nodejs 10.17.0+ werden als Mindestversion benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
+                "ru": "ПОВРЕЖДЕНИЕ: требуется Nodejs 10.17.0+ как минимальная версия\nобновлена версия homebridge и зависимости",
+                "pt": "QUEBRANDO: Nodejs 10.17.0+ necessária como versão mínima\nversão do homebridge e dependências atualizadas",
+                "nl": "BREAKING: Nodejs 10.17.0+ vereist als minimale versie\nhomebridge-versie en afhankelijkheden bijgewerkt",
+                "fr": "BREAKING: Nodejs 10.17.0+ est nécessaire comme version minimale\nversion et dépendances de homebridge mises à jour",
+                "it": "BREAKING: Nodejs 10.17.0+ necessario come versione minima\nversione di homebridge e dipendenze aggiornate",
+                "es": "ROMPIENDO: Nodejs 10.17.0+ necesario como versión mínima\nVersión de Homebridge y dependencias actualizadas",
+                "pl": "PRZEŁOM: Nodejs 10.17.0+ potrzebny jako wersja minimalna\nZaktualizowano wersję i zależności homebridge",
+                "zh-cn": "BREAKING：最低版本需要Nodejs 10.17.0+\nhomebridge版本和依赖项已更新"
+            },
             "1.0.1": {
                 "en": "homebridge version updated",
                 "de": "Homebridge-Version aktualisiert",
@@ -88,7 +100,10 @@
         "materialize": true,
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.ham-wemo/master/admin/ham-wemo.png",
-        "keywords": ["homebridge", "wemo"],
+        "keywords": [
+            "homebridge",
+            "wemo"
+        ],
         "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
         "loglevel": "info",
         "type": "iot-systems"
@@ -97,8 +112,7 @@
         "ignoreInfoAccessoryServices": true,
         "characteristicPollingInterval": 0,
         "wrapperConfig": {
-            "accessories": [
-            ],
+            "accessories": [],
             "platforms": [
                 {
                     "platform": "BelkinWeMo",
