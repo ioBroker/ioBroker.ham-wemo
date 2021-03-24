@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "1.1.0",
+        "version": "1.1.1",
         "news": {
+            "1.1.1": {
+                "en": "js-controller 2.0 now needed as minimum\nhomebridge version and dependencies updated",
+                "de": "js-controller 2.0 wird jetzt mindestens benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
+                "ru": "js-controller 2.0 теперь нужен как минимум\nобновлена версия homebridge и зависимости",
+                "pt": "js-controller 2.0 agora necessário como mínimo\nversão do homebridge e dependências atualizadas",
+                "nl": "js-controller 2.0 nu als minimum nodig\nhomebridge-versie en afhankelijkheden bijgewerkt",
+                "fr": "js-controller 2.0 est maintenant nécessaire au minimum\nmise à jour de la version et des dépendances de homebridge",
+                "it": "js-controller 2.0 ora necessario come minimo\nversione di homebridge e dipendenze aggiornate",
+                "es": "js-controller 2.0 ahora se necesita como mínimo\nVersión de Homebridge y dependencias actualizadas.",
+                "pl": "js-controller 2.0 jest teraz potrzebny jako minimum\nZaktualizowano wersję i zależności homebridge",
+                "zh-cn": "现在至少需要js-controller 2.0\nhomebridge版本和依赖项已更新"
+            },
             "1.1.0": {
                 "en": "BREAKING: Nodejs 10.17.0+ needed as minimum version\nhomebridge version and dependencies updated",
                 "de": "BREAKING: Nodejs 10.17.0+ werden als Mindestversion benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
