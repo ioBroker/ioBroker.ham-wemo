@@ -106,7 +106,12 @@
         ],
         "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
         "loglevel": "info",
-        "type": "iot-systems"
+        "type": "iot-systems",
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
     },
     "native": {
         "ignoreInfoAccessoryServices": true,
