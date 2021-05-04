@@ -1,6 +1,11 @@
 ![Logo](admin/ham-wemo.png)
 # ioBroker Wemo adapter based on homebridge-platform-wemo
-![Number of Installations](http://iobroker.live/badges/ham-wemo-installed.svg) ![Number of Installations](http://iobroker.live/badges/ham-wemo-stable.svg)
+![Number of Installations](http://iobroker.live/badges/ham-wemo-installed.svg)
+![Number of Installations](http://iobroker.live/badges/ham-wemo-stable.svg)
+[![NPM version](http://img.shields.io/npm/v/iobroker.ham-wemo.svg)](https://www.npmjs.com/package/iobroker.ham-wemo)
+
+![Test and Release](https://github.com/ioBroker/iobroker.ham-wemo/workflows/Test%20and%20Release/badge.svg)
+[![Downloads](https://img.shields.io/npm/dm/iobroker.ham-wemo.svg)](https://www.npmjs.com/package/iobroker.ham-wemo)
 
 =================
 
