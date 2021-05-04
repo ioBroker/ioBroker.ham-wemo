@@ -123,7 +123,10 @@
             {
                 "js-controller": ">=2.0.0"
             }
-        ]
+        ],
+        "tier": 2,
+        "connectionType": "cloud",
+        "dataSource": "push"
     },
     "native": {
         "ignoreInfoAccessoryServices": true,
