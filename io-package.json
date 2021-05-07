@@ -1,8 +1,20 @@
 {
     "common": {
         "name": "ham-wemo",
-        "version": "1.1.1",
+        "version": "2.0.0",
         "news": {
+            "2.0.0": {
+                "en": "wemo plugin and homebridge updated - check wem plugin changelog!\noptimize for js-controller 3.3",
+                "de": "Wemo-Plugin und Homebridge aktualisiert - überprüfen Sie das Wem-Plugin-Änderungsprotokoll!\noptimieren für js-controller 3.3",
+                "ru": "Обновлены плагин wemo и homebridge - проверьте журнал изменений плагина wem!\nоптимизировать под js-controller 3.3",
+                "pt": "Plugin wemo e homebridge atualizados - verifique o changelog do plugin wem!\notimizar para js-controller 3.3",
+                "nl": "wemo-plug-in en homebridge bijgewerkt - controleer de wijzigingslog van de wem-plug-in!\noptimaliseren voor js-controller 3.3",
+                "fr": "plugin wemo et homebridge mis à jour - vérifiez le journal des modifications du plugin wem!\noptimiser pour js-controller 3.3",
+                "it": "plugin wemo e homebridge aggiornati - controlla il log delle modifiche del plugin wem!\nottimizzare per js-controller 3.3",
+                "es": "Wemo plugin y homebridge actualizados - ¡verifique el registro de cambios del plugin wem!\noptimizar para js-controller 3.3",
+                "pl": "Zaktualizowano wtyczkę wemo i mostek główny - sprawdź dziennik zmian wtyczki wem!\noptymalizacja dla kontrolera js 3.3",
+                "zh-cn": "wemo插件和homebridge已更新-检查wem插件changelog！\n针对js-controller 3.3进行优化"
+            },
             "1.1.1": {
                 "en": "js-controller 2.0 now needed as minimum\nhomebridge version and dependencies updated",
                 "de": "js-controller 2.0 wird jetzt mindestens benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
