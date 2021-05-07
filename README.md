@@ -17,7 +17,7 @@ Read more about it here https://www.npmjs.com/package/homebridge-platform-wemo
 ## Changelog
 
 ### __WORK IN PROGRESS__
-* (Apollon77) plugin and homebridge updated
+* (Apollon77) wemo plugin and homebridge updated - check wem plugin changelog!
 * (Apollon77) optimize for js-controller 3.3
 
 ### 1.1.1 (2021-03-24)
