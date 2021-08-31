@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "iobroker.ham": "^4.0.2",
-    "homebridge-platform-wemo": "^3.1.0",
+    "homebridge-platform-wemo": "^3.3.1",
     "@iobroker/adapter-core": "^2.5.1"
   },
   "description": "Wemo adapter for iobroker based on homebridge",
