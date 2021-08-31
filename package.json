@@ -17,14 +17,14 @@
   "dependencies": {
     "iobroker.ham": "^4.0.2",
     "homebridge-platform-wemo": "^3.3.1",
-    "@iobroker/adapter-core": "^2.5.0"
+    "@iobroker/adapter-core": "^2.5.1"
   },
   "description": "Wemo adapter for iobroker based on homebridge",
   "devDependencies": {
-    "@alcalzone/release-script": "^2.0.0",
+    "@alcalzone/release-script": "^2.2.1",
     "chai": "^4.3.4",
     "gulp": "^4.0.2",
-    "mocha": "^9.0.1",
+    "mocha": "^9.0.3",
     "request": "^2.88.2"
   },
   "homepage": "https://github.com/ioBroker/ioBroker.ham-wemo",
