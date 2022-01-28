@@ -79,7 +79,7 @@ describe('Test ' + adapterShortName + ' Wrapper adapter', () => {
         this.timeout(600000); // because of first install from npm
 
         setup.setupController(() => {
-            const config = setup.getAdapterConfig();
+            const config = await setup.getAdapterConfig();
             // enable adapter
             config.common.enabled  = true;
             config.common.loglevel = 'debug';
@@ -87,7 +87,7 @@ describe('Test ' + adapterShortName + ' Wrapper adapter', () => {
             config.native = defConfig.native;
             config.native.wrapperConfig.platforms[0].wemoClient.listen_interface = 'lo';
 
-            setup.setAdapterConfig(config.common, config.native);
+            await setup.setAdapterConfig(config.common, config.native);
 
             setup.startController(
                 true,
