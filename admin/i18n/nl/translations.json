@@ -1,0 +1,11 @@
+{
+    "Add module": "Module toevoegen",
+    "Module names": "Module namen",
+    "discovery": "Ontdekking",
+    "ignoredDevices": "Genegeerde apparaten",
+    "listen_interface": "Luister interface",
+    "manualDevices": "Handmatige apparaten",
+    "noMotionTimer": "Geen time-out voor beweging",
+    "unicastBindPort": "Unicast-bindpoort",
+    "wemoClient.port": "Wemo-clientpoort"
+}

@@ -1,0 +1,11 @@
+{
+    "Add module": "添加模块",
+    "Module names": "模块名称",
+    "discovery": "发现",
+    "ignoredDevices": "忽略的设备",
+    "listen_interface": "监听界面",
+    "manualDevices": "手动装置",
+    "noMotionTimer": "无运动超时",
+    "unicastBindPort": "单播绑定端口",
+    "wemoClient.port": "WeMo 客户端端口"
+}

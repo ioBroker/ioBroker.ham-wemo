@@ -1,0 +1,11 @@
+{
+    "Add module": "Добавить модуль",
+    "Module names": "Имена модулей",
+    "discovery": "Поиск устройств",
+    "ignoredDevices": "Игнорируемые устройства",
+    "listen_interface": "Интерфейс прослушивания",
+    "manualDevices": "Ввод устройства вручную",
+    "noMotionTimer": "Тайм-аут отсутствия движения",
+    "unicastBindPort": "Порт Unicast",
+    "wemoClient.port": "Порт клиента Wemo"
+}

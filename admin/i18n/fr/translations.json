@@ -1,0 +1,11 @@
+{
+    "Add module": "Ajouter un module",
+    "Module names": "Noms de modules",
+    "discovery": "Découverte",
+    "ignoredDevices": "Appareils ignorés",
+    "listen_interface": "Écouter l'interface",
+    "manualDevices": "Dispositifs manuels",
+    "noMotionTimer": "Aucun délai d'attente de mouvement",
+    "unicastBindPort": "Port de liaison Unicast",
+    "wemoClient.port": "Port client Wemo"
+}
