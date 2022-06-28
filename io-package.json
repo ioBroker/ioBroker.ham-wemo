@@ -1,171 +1,159 @@
 {
-    "common": {
-        "name": "ham-wemo",
-        "version": "2.0.0",
-        "news": {
-            "2.0.0": {
-                "en": "wemo plugin and homebridge updated - check wem plugin changelog!\noptimize for js-controller 3.3",
-                "de": "Wemo-Plugin und Homebridge aktualisiert - überprüfen Sie das Wem-Plugin-Änderungsprotokoll!\noptimieren für js-controller 3.3",
-                "ru": "Обновлены плагин wemo и homebridge - проверьте журнал изменений плагина wem!\nоптимизировать под js-controller 3.3",
-                "pt": "Plugin wemo e homebridge atualizados - verifique o changelog do plugin wem!\notimizar para js-controller 3.3",
-                "nl": "wemo-plug-in en homebridge bijgewerkt - controleer de wijzigingslog van de wem-plug-in!\noptimaliseren voor js-controller 3.3",
-                "fr": "plugin wemo et homebridge mis à jour - vérifiez le journal des modifications du plugin wem!\noptimiser pour js-controller 3.3",
-                "it": "plugin wemo e homebridge aggiornati - controlla il log delle modifiche del plugin wem!\nottimizzare per js-controller 3.3",
-                "es": "Wemo plugin y homebridge actualizados - ¡verifique el registro de cambios del plugin wem!\noptimizar para js-controller 3.3",
-                "pl": "Zaktualizowano wtyczkę wemo i mostek główny - sprawdź dziennik zmian wtyczki wem!\noptymalizacja dla kontrolera js 3.3",
-                "zh-cn": "wemo插件和homebridge已更新-检查wem插件changelog！\n针对js-controller 3.3进行优化"
-            },
-            "1.1.1": {
-                "en": "js-controller 2.0 now needed as minimum\nhomebridge version and dependencies updated",
-                "de": "js-controller 2.0 wird jetzt mindestens benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
-                "ru": "js-controller 2.0 теперь нужен как минимум\nобновлена версия homebridge и зависимости",
-                "pt": "js-controller 2.0 agora necessário como mínimo\nversão do homebridge e dependências atualizadas",
-                "nl": "js-controller 2.0 nu als minimum nodig\nhomebridge-versie en afhankelijkheden bijgewerkt",
-                "fr": "js-controller 2.0 est maintenant nécessaire au minimum\nmise à jour de la version et des dépendances de homebridge",
-                "it": "js-controller 2.0 ora necessario come minimo\nversione di homebridge e dipendenze aggiornate",
-                "es": "js-controller 2.0 ahora se necesita como mínimo\nVersión de Homebridge y dependencias actualizadas.",
-                "pl": "js-controller 2.0 jest teraz potrzebny jako minimum\nZaktualizowano wersję i zależności homebridge",
-                "zh-cn": "现在至少需要js-controller 2.0\nhomebridge版本和依赖项已更新"
-            },
-            "1.1.0": {
-                "en": "BREAKING: Nodejs 10.17.0+ needed as minimum version\nhomebridge version and dependencies updated",
-                "de": "BREAKING: Nodejs 10.17.0+ werden als Mindestversion benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
-                "ru": "ПОВРЕЖДЕНИЕ: требуется Nodejs 10.17.0+ как минимальная версия\nобновлена версия homebridge и зависимости",
-                "pt": "QUEBRANDO: Nodejs 10.17.0+ necessária como versão mínima\nversão do homebridge e dependências atualizadas",
-                "nl": "BREAKING: Nodejs 10.17.0+ vereist als minimale versie\nhomebridge-versie en afhankelijkheden bijgewerkt",
-                "fr": "BREAKING: Nodejs 10.17.0+ est nécessaire comme version minimale\nversion et dépendances de homebridge mises à jour",
-                "it": "BREAKING: Nodejs 10.17.0+ necessario come versione minima\nversione di homebridge e dipendenze aggiornate",
-                "es": "ROMPIENDO: Nodejs 10.17.0+ necesario como versión mínima\nVersión de Homebridge y dependencias actualizadas",
-                "pl": "PRZEŁOM: Nodejs 10.17.0+ potrzebny jako wersja minimalna\nZaktualizowano wersję i zależności homebridge",
-                "zh-cn": "BREAKING：最低版本需要Nodejs 10.17.0+\nhomebridge版本和依赖项已更新"
-            },
-            "1.0.1": {
-                "en": "homebridge version updated",
-                "de": "Homebridge-Version aktualisiert",
-                "ru": "обновлена версия homebridge",
-                "pt": "versão homebridge atualizada",
-                "nl": "Homebridge-versie bijgewerkt",
-                "fr": "version de homebridge mise à jour",
-                "it": "versione di homebridge aggiornata",
-                "es": "versión homebridge actualizada",
-                "pl": "zaktualizowana wersja homebridge",
-                "zh-cn": "homebridge版本更新"
-            },
-            "1.0.0": {
-                "en": "Optimizations",
-                "de": "Optimierungen",
-                "ru": "Оптимизации",
-                "pt": "Otimizações",
-                "nl": "optimalisaties",
-                "fr": "Optimisations",
-                "it": "ottimizzazioni",
-                "es": "Optimizaciones",
-                "pl": "Optymalizacje",
-                "zh-cn": "优化"
-            },
-            "0.2.2": {
-                "en": "Small config fix",
-                "de": "Kleine Konfiguration reparieren",
-                "ru": "Небольшое исправление конфигурации",
-                "pt": "Correção de configuração pequena",
-                "nl": "Kleine configuratie-oplossing",
-                "fr": "Petite configuration de configuration",
-                "it": "Piccola soluzione di configurazione",
-                "es": "Pequeño arreglo de configuración",
-                "pl": "Mała poprawka konfiguracji",
-                "zh-cn": "小配置修复"
-            },
-            "0.2.1": {
-                "en": "Optimizations",
-                "de": "Optimierungen",
-                "ru": "Оптимизации",
-                "pt": "Otimizações",
-                "nl": "optimalisaties",
-                "fr": "Optimisations",
-                "it": "ottimizzazioni",
-                "es": "Optimizaciones",
-                "pl": "Optymalizacje",
-                "zh-cn": "优化"
-            },
-            "0.1.0": {
-                "en": "initial adapter",
-                "de": "Initiale Version",
-                "ru": "Первоначальный адаптер",
-                "pt": "Versão inicial",
-                "fr": "Version initiale",
-                "nl": "Eerste release",
-                "it": "adattatore iniziale",
-                "es": "adaptador inicial",
-                "pl": "początkowy adapter",
-                "zh-cn": "初始适配器"
-            }
-        },
-        "title": "Belkin Wemo plugin",
-        "titleLang": {
-            "en": "Belkin Wemo plugin",
-            "de": "Belkin Wemo plugin",
-            "ru": "Belkin Wemo plugin",
-            "pt": "Belkin Wemo plugin",
-            "nl": "Belkin Wemo plugin",
-            "fr": "Belkin Wemo plugin",
-            "it": "Belkin Wemo plugin",
-            "es": "Belkin Wemo plugin",
-            "pl": "Wtyczka Belkin Wemo",
-            "zh-cn": "贝尔金 Wemo 插件"
-        },
-        "desc": {
-            "en": "ioBroker Homebridge Adapter Belkin Wemo",
-            "de": "ioBroker Homebridge Adapter Belkin Wemo",
-            "ru": "ioBroker Homebridge драйвер Belkin Wemo",
-            "pt": "Modelo de Homebridge para o ioBroker Belkin Wemo",
-            "fr": "ioBroker Homebridge modèle Belkin Wemo",
-            "nl": "ioBroker Homebridge Adapter Belkin Wemo",
-            "it": "Adattatore Homebridge ioBroker Belkin Wemo",
-            "es": "Adaptador Homebridge ioBroker Belkin Wemo",
-            "pl": "ioBroker Homebridge Adapter Belkin Wemo",
-            "zh-cn": "ioBroker Homebridge 适配器 Belkin Wemo"
-        },
-        "authors": [
-            "bluefox <dogafox@gmail.com>"
-        ],
-        "license": "MIT",
-        "platform": "Javascript/Node.js",
-        "mode": "daemon",
-        "icon": "ham-wemo.png",
-        "materialize": true,
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.ham-wemo/master/admin/ham-wemo.png",
-        "keywords": [
-            "homebridge",
-            "wemo"
-        ],
-        "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
-        "loglevel": "info",
-        "type": "iot-systems",
-        "dependencies": [
-            {
-                "js-controller": ">=2.0.0"
-            }
-        ],
-        "tier": 2,
-        "connectionType": "cloud",
-        "dataSource": "push"
+  "common": {
+    "name": "ham-wemo",
+    "version": "3.0.0",
+    "news": {
+      "3.0.0": {
+        "en": "Important: Requires at least a current Node.js 14 or 16\nwemo plugin changed to \"homebridge-wemo\" and homebridge updated - check wem plugin changelog!",
+        "de": "Wichtig: Erfordert mindestens einen aktuellen Node.js 14 oder 16\nwemo plugin geändert zu homebridge-wemo und homebridge aktualisiert - check wem plugin changelog!",
+        "ru": "Важно: Требуется по крайней мере текущий Node.js 14 или 16\nwemo плагин изменен на homebridge-wemo и homebridge обновлен - проверьте wem плагин changelog!",
+        "pt": "Importante: Requer pelo menos um Node.js atual 14 ou 16\nwemo plugin mudou para homebridge-wemo e homebridge atualizado - check wem plugin changelog!",
+        "nl": "Verzoek in ieder geval een huidige Node\nwemo plugin veranderde in homebridge-wemo en homebridge uped - check wem plugin verandering!",
+        "fr": "Important: Nécessite au moins un Node.js 14 ou 16 actuel\nwemo plugin a changé à homebridge-wemo et homebridge mis à jour - check wem plugin changelog!",
+        "it": "Importante: Richiede almeno un Node.js corrente 14 o 16\nwemo plugin cambiato in homebridge-wemo e homebridge aggiornato - controllare wem plugin changelog!",
+        "es": "Importante: Requiere al menos un Node.js actual 14 o 16\nplugin wemo cambió a homebridge-wemo y homebridge actualizado - check wem plugin changelog!",
+        "pl": "Wymaga co najmniej aktualny numer 14 lub 16\nwtyczka wotonowa zmieniła się na homebridge-wemo i domowe mosty zaktualizowane – wtyczka kontrolna!",
+        "zh-cn": "重要:至少要求目前第14或16号诺言。\n我们从中转到bhridge-wemo和面桥更新,检查我们mplugin changelog!"
+      },
+      "2.0.0": {
+        "en": "wemo plugin and homebridge updated - check wem plugin changelog!\noptimize for js-controller 3.3",
+        "de": "Wemo-Plugin und Homebridge aktualisiert - überprüfen Sie das Wem-Plugin-Änderungsprotokoll!\noptimieren für js-controller 3.3",
+        "ru": "Обновлены плагин wemo и homebridge - проверьте журнал изменений плагина wem!\nоптимизировать под js-controller 3.3",
+        "pt": "Plugin wemo e homebridge atualizados - verifique o changelog do plugin wem!\notimizar para js-controller 3.3",
+        "nl": "wemo-plug-in en homebridge bijgewerkt - controleer de wijzigingslog van de wem-plug-in!\noptimaliseren voor js-controller 3.3",
+        "fr": "plugin wemo et homebridge mis à jour - vérifiez le journal des modifications du plugin wem!\noptimiser pour js-controller 3.3",
+        "it": "plugin wemo e homebridge aggiornati - controlla il log delle modifiche del plugin wem!\nottimizzare per js-controller 3.3",
+        "es": "Wemo plugin y homebridge actualizados - ¡verifique el registro de cambios del plugin wem!\noptimizar para js-controller 3.3",
+        "pl": "Zaktualizowano wtyczkę wemo i mostek główny - sprawdź dziennik zmian wtyczki wem!\noptymalizacja dla kontrolera js 3.3",
+        "zh-cn": "wemo插件和homebridge已更新-检查wem插件changelog！\n针对js-controller 3.3进行优化"
+      },
+      "1.1.1": {
+        "en": "js-controller 2.0 now needed as minimum\nhomebridge version and dependencies updated",
+        "de": "js-controller 2.0 wird jetzt mindestens benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
+        "ru": "js-controller 2.0 теперь нужен как минимум\nобновлена версия homebridge и зависимости",
+        "pt": "js-controller 2.0 agora necessário como mínimo\nversão do homebridge e dependências atualizadas",
+        "nl": "js-controller 2.0 nu als minimum nodig\nhomebridge-versie en afhankelijkheden bijgewerkt",
+        "fr": "js-controller 2.0 est maintenant nécessaire au minimum\nmise à jour de la version et des dépendances de homebridge",
+        "it": "js-controller 2.0 ora necessario come minimo\nversione di homebridge e dipendenze aggiornate",
+        "es": "js-controller 2.0 ahora se necesita como mínimo\nVersión de Homebridge y dependencias actualizadas.",
+        "pl": "js-controller 2.0 jest teraz potrzebny jako minimum\nZaktualizowano wersję i zależności homebridge",
+        "zh-cn": "现在至少需要js-controller 2.0\nhomebridge版本和依赖项已更新"
+      },
+      "1.1.0": {
+        "en": "BREAKING: Nodejs 10.17.0+ needed as minimum version\nhomebridge version and dependencies updated",
+        "de": "BREAKING: Nodejs 10.17.0+ werden als Mindestversion benötigt\nHomebridge-Version und Abhängigkeiten aktualisiert",
+        "ru": "ПОВРЕЖДЕНИЕ: требуется Nodejs 10.17.0+ как минимальная версия\nобновлена версия homebridge и зависимости",
+        "pt": "QUEBRANDO: Nodejs 10.17.0+ necessária como versão mínima\nversão do homebridge e dependências atualizadas",
+        "nl": "BREAKING: Nodejs 10.17.0+ vereist als minimale versie\nhomebridge-versie en afhankelijkheden bijgewerkt",
+        "fr": "BREAKING: Nodejs 10.17.0+ est nécessaire comme version minimale\nversion et dépendances de homebridge mises à jour",
+        "it": "BREAKING: Nodejs 10.17.0+ necessario come versione minima\nversione di homebridge e dipendenze aggiornate",
+        "es": "ROMPIENDO: Nodejs 10.17.0+ necesario como versión mínima\nVersión de Homebridge y dependencias actualizadas",
+        "pl": "PRZEŁOM: Nodejs 10.17.0+ potrzebny jako wersja minimalna\nZaktualizowano wersję i zależności homebridge",
+        "zh-cn": "BREAKING：最低版本需要Nodejs 10.17.0+\nhomebridge版本和依赖项已更新"
+      },
+      "1.0.1": {
+        "en": "homebridge version updated",
+        "de": "Homebridge-Version aktualisiert",
+        "ru": "обновлена версия homebridge",
+        "pt": "versão homebridge atualizada",
+        "nl": "Homebridge-versie bijgewerkt",
+        "fr": "version de homebridge mise à jour",
+        "it": "versione di homebridge aggiornata",
+        "es": "versión homebridge actualizada",
+        "pl": "zaktualizowana wersja homebridge",
+        "zh-cn": "homebridge版本更新"
+      },
+      "1.0.0": {
+        "en": "Optimizations",
+        "de": "Optimierungen",
+        "ru": "Оптимизации",
+        "pt": "Otimizações",
+        "nl": "optimalisaties",
+        "fr": "Optimisations",
+        "it": "ottimizzazioni",
+        "es": "Optimizaciones",
+        "pl": "Optymalizacje",
+        "zh-cn": "优化"
+      },
+      "0.2.2": {
+        "en": "Small config fix",
+        "de": "Kleine Konfiguration reparieren",
+        "ru": "Небольшое исправление конфигурации",
+        "pt": "Correção de configuração pequena",
+        "nl": "Kleine configuratie-oplossing",
+        "fr": "Petite configuration de configuration",
+        "it": "Piccola soluzione di configurazione",
+        "es": "Pequeño arreglo de configuración",
+        "pl": "Mała poprawka konfiguracji",
+        "zh-cn": "小配置修复"
+      }
     },
-    "native": {
-        "ignoreInfoAccessoryServices": true,
-        "characteristicPollingInterval": 0,
-        "wrapperConfig": {
-            "accessories": [],
-            "platforms": [
-                {
-                    "platform": "Wemo",
-                    "name": "WeMo Platform",
-                    "wemoClient": {
-                        "port": 1234,
-                        "listen_interface": "wlan0"
-                    }
-                }
-            ]
+    "title": "Belkin Wemo plugin",
+    "titleLang": {
+      "en": "Belkin Wemo plugin",
+      "de": "Belkin Wemo plugin",
+      "ru": "Belkin Wemo plugin",
+      "pt": "Belkin Wemo plugin",
+      "nl": "Belkin Wemo plugin",
+      "fr": "Belkin Wemo plugin",
+      "it": "Belkin Wemo plugin",
+      "es": "Belkin Wemo plugin",
+      "pl": "Wtyczka Belkin Wemo",
+      "zh-cn": "贝尔金 Wemo 插件"
+    },
+    "desc": {
+      "en": "ioBroker Homebridge Adapter Belkin Wemo",
+      "de": "ioBroker Homebridge Adapter Belkin Wemo",
+      "ru": "ioBroker Homebridge драйвер Belkin Wemo",
+      "pt": "Modelo de Homebridge para o ioBroker Belkin Wemo",
+      "fr": "ioBroker Homebridge modèle Belkin Wemo",
+      "nl": "ioBroker Homebridge Adapter Belkin Wemo",
+      "it": "Adattatore Homebridge ioBroker Belkin Wemo",
+      "es": "Adaptador Homebridge ioBroker Belkin Wemo",
+      "pl": "ioBroker Homebridge Adapter Belkin Wemo",
+      "zh-cn": "ioBroker Homebridge 适配器 Belkin Wemo"
+    },
+    "authors": [
+      "bluefox <dogafox@gmail.com>"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "icon": "ham-wemo.png",
+    "materialize": true,
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.ham-wemo/master/admin/ham-wemo.png",
+    "keywords": [
+      "homebridge",
+      "wemo"
+    ],
+    "readme": "https://github.com/ioBroker/ioBroker.ham-wemo/blob/master/README.md",
+    "loglevel": "info",
+    "type": "iot-systems",
+    "dependencies": [
+      {
+        "js-controller": ">=2.0.0"
+      }
+    ],
+    "tier": 2,
+    "connectionType": "cloud",
+    "dataSource": "push"
+  },
+  "native": {
+    "ignoreInfoAccessoryServices": true,
+    "characteristicPollingInterval": 0,
+    "wrapperConfig": {
+      "accessories": [],
+      "platforms": [
+        {
+          "platform": "Wemo",
+          "name": "WeMo Platform",
+          "wemoClient": {
+            "port": 1234,
+            "listen_interface": "wlan0"
+          }
         }
+      ]
     }
+  }
 }
