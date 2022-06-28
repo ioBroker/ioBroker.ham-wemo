@@ -160,15 +160,8 @@
                 {
                     "platform": "Wemo",
                     "name": "WeMo Platform",
-                    "noMotionTimer": 60,
-                    "ignoredDevices": [],
-                    "manualDevices": [],
-                    "discovery": true,
                     "wemoClient": {
                         "port": 1234,
-                        "discover_opts": {
-                            "unicastBindPort": 1235
-                        },
                         "listen_interface": "wlan0"
                     }
                 }

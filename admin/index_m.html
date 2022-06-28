@@ -35,7 +35,6 @@
         config = settings;
         settings = config.wrapperConfig.platforms[0];
         settings.port = settings.wemoClient.port;
-        settings.unicastBindPort = settings.wemoClient.discover_opts.unicastBindPort;
         settings.listen_interface = settings.wemoClient.listen_interface;
 
         // example: select elements with id=key and class=value and insert value
@@ -135,9 +134,6 @@
         obj.wemoClient.port = obj.port;
         delete obj.port;
 
-        obj.wemoClient.discover_opts.unicastBindPort = obj.unicastBindPort;
-        delete obj.unicastBindPort;
-
         obj.wemoClient.listen_interface = obj.listen_interface;
         delete obj.listen_interface;
 
@@ -174,8 +170,6 @@
                         <label for="port" class="translate">wemoClient.port</label>
                     </div>
                     <div class="input-field col s12 m6 l4 xl3">
-                        <input id="unicastBindPort" class="value" type="number" min="1" max="65565"/>
-                        <label for="unicastBindPort" class="translate">unicastBindPort</label>
                     </div>
                 </div>
                 <div class="row">
