@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "ham-wemo",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "news": {
+      "3.0.1": {
+        "en": "homebridge version and dependencies updated",
+        "de": "homebridge-version und abhängigkeiten aktualisiert",
+        "ru": "homebridge версия и зависимости обновлены",
+        "pt": "versão homebridge e dependências atualizadas",
+        "nl": "homebridge versie en afhankelijkheid",
+        "fr": "version de homebridge et dépendances mises à jour",
+        "it": "versione homebridge e dipendenze aggiornate",
+        "es": "versión y dependencias actualizadas",
+        "pl": "wersja domowa i zależność aktualizacji",
+        "zh-cn": "b. 更新的屋顶图和包件"
+      },
       "3.0.0": {
         "en": "Important: Requires at least a current Node.js 14 or 16\nwemo plugin changed to \"homebridge-wemo\" and homebridge updated - check wem plugin changelog!",
         "de": "Wichtig: Erfordert mindestens einen aktuellen Node.js 14 oder 16\nwemo plugin geändert zu homebridge-wemo und homebridge aktualisiert - check wem plugin changelog!",
@@ -74,18 +86,6 @@
         "es": "Optimizaciones",
         "pl": "Optymalizacje",
         "zh-cn": "优化"
-      },
-      "0.2.2": {
-        "en": "Small config fix",
-        "de": "Kleine Konfiguration reparieren",
-        "ru": "Небольшое исправление конфигурации",
-        "pt": "Correção de configuração pequena",
-        "nl": "Kleine configuratie-oplossing",
-        "fr": "Petite configuration de configuration",
-        "it": "Piccola soluzione di configurazione",
-        "es": "Pequeño arreglo de configuración",
-        "pl": "Mała poprawka konfiguracji",
-        "zh-cn": "小配置修复"
       }
     },
     "title": "Belkin Wemo plugin",
