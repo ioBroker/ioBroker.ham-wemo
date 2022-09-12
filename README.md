@@ -16,6 +16,9 @@ This adapter is based on homebridge-platform-wemo plugin.
 Read more about it here https://www.npmjs.com/package/homebridge-platform-wemo
 
 ## Changelog
+### __WORK IN PROGRESS__
+* (Apollon77) homebridge version and dependencies updated
+
 ### 3.0.0 (2022-06-28)
 * Important: Requires at least a current Node.js 14 or 16
 * (Apollon77) wemo plugin changed to "homebridge-wemo" and homebridge updated - check wem plugin changelog!
