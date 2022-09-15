@@ -16,6 +16,9 @@ This adapter is based on homebridge-platform-wemo plugin.
 Read more about it here https://www.npmjs.com/package/homebridge-platform-wemo
 
 ## Changelog
+## __WORK IN PROGRESS__
+* (Apollon77) update to latest ham version
+
 ### 3.0.1 (2022-09-12)
 * (Apollon77) homebridge version and dependencies updated
 
