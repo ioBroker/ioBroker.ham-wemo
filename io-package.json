@@ -1,8 +1,20 @@
 {
   "common": {
     "name": "ham-wemo",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "news": {
+      "3.0.2": {
+        "en": "update to latest ham version",
+        "de": "aktualisierung der neuesten ham-version",
+        "ru": "обновление до последней версии ham",
+        "pt": "atualização para a última versão do presunto",
+        "nl": "vertaling:",
+        "fr": "mise à jour de la dernière version de ham",
+        "it": "aggiornamento per ultima versione di prosciutto",
+        "es": "actualización a la última versión ham",
+        "pl": "aktualizacja",
+        "zh-cn": "最新版本的更新"
+      },
       "3.0.1": {
         "en": "homebridge version and dependencies updated",
         "de": "homebridge-version und abhängigkeiten aktualisiert",
@@ -74,18 +86,6 @@
         "es": "versión homebridge actualizada",
         "pl": "zaktualizowana wersja homebridge",
         "zh-cn": "homebridge版本更新"
-      },
-      "1.0.0": {
-        "en": "Optimizations",
-        "de": "Optimierungen",
-        "ru": "Оптимизации",
-        "pt": "Otimizações",
-        "nl": "optimalisaties",
-        "fr": "Optimisations",
-        "it": "ottimizzazioni",
-        "es": "Optimizaciones",
-        "pl": "Optymalizacje",
-        "zh-cn": "优化"
       }
     },
     "title": "Belkin Wemo plugin",
