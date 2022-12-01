@@ -15,7 +15,7 @@
     }
   ],
   "dependencies": {
-    "iobroker.ham": "^5.2.4",
+    "iobroker.ham": "^5.3.1",
     "homebridge-wemo": "^5.0.5",
     "@iobroker/adapter-core": "^2.6.7"
   },
