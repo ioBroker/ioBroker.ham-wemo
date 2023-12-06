@@ -44,7 +44,7 @@
     "url": "git+https://github.com/ioBroker/ioBroker.ham-wemo.git"
   },
   "engines": {
-    "node": "^14.19.3 || ^16.15.1 || ^18.17.1"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --exit",
