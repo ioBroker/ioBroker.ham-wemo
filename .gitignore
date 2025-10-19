@@ -2,3 +2,6 @@
 /package-lock.json
 /node_modules
 flat.txt
+
+#ignore .commitinfo created by ioBroker release script
+.commitinfo
