@@ -16,6 +16,9 @@ This adapter is based on homebridge-wemo plugin.
 Read more about it here https://www.npmjs.com/package/homebridge-wemo
 
 ## Changelog
+### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22 now
+
 ### 3.0.2 (2022-09-15)
 * (Apollon77) update to latest ham version
 
