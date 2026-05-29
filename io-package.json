@@ -120,7 +120,6 @@
     "platform": "Javascript/Node.js",
     "mode": "daemon",
     "icon": "ham-wemo.png",
-    "materialize": true,
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.ham-wemo/master/admin/ham-wemo.png",
     "keywords": [
@@ -132,12 +131,15 @@
     "type": "iot-systems",
     "dependencies": [
       {
-        "js-controller": ">=2.0.0"
+        "js-controller": ">=6.0.11"
       }
     ],
     "tier": 2,
     "connectionType": "cloud",
-    "dataSource": "push"
+    "dataSource": "push",
+    "adminUI": {
+      "config": "materialize"
+    }
   },
   "native": {
     "ignoreInfoAccessoryServices": true,
