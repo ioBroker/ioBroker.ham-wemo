@@ -122,7 +122,6 @@
     "platform": "Javascript/Node.js",
     "mode": "daemon",
     "icon": "ham-wemo.png",
-    "materialize": true,
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.ham-wemo/master/admin/ham-wemo.png",
     "keywords": [
@@ -139,7 +138,10 @@
     ],
     "tier": 2,
     "connectionType": "cloud",
-    "dataSource": "push"
+    "dataSource": "push",
+    "adminUI": {
+      "config": "materialize"
+    }
   },
   "native": {
     "ignoreInfoAccessoryServices": true,
