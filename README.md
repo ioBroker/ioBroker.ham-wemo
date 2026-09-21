@@ -53,6 +53,8 @@ Read more about it here https://www.npmjs.com/package/homebridge-wemo
 ### 0.1.0 (2018-06-20)
 * (bluefox) initial commit
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 The MIT License (MIT)
 
