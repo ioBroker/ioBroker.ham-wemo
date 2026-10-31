@@ -18,6 +18,7 @@ Read more about it here https://www.npmjs.com/package/homebridge-wemo
 ## Changelog
 
 ### **WORK IN PROGRESS**
+- (copilot) Adapter requires node.js >= 22.19.0 now
 - (ioBroker-Bot) Adapter requires js-controller >= 6.0.11 now.
 
 ### 3.0.2 (2022-09-15)
